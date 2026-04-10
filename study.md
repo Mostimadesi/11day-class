@@ -74,15 +74,27 @@
  ## day2 API配置相关
  ### 基本要素
  Prompt：提示词，在LLM广泛普及后基本可视为“用户访问大模型时的所有输入文本”，大部分提示词通常以任务或问题的形式传入LLM
+ 
  Temperature：温度，控制LLM生成结果的随机性，越高的温度会带来越不可预测的输出（以及更有创意、更多样化的输出）
+ 
  System prompt：系统提示词，可以认为是“全局提示词”，常用于对模型进行初始化设定（如模拟人格）
+ 
  Context：上下文，可以认为是模型的“短期记忆”，系统一次浏览的上下文由Context window（上下文窗口）决定
+ 
  Max_tokens：最大生成token数，控制模型输出长度（考虑到输出成本/性能）
  ### 配置参数
  base_api_url：API服务入口地址，决定调用哪个服务（例如，即使api是openai协议格式，只要其他提供商也使用该格式，则可以只更改base_api_url和model_name）
- API_KEY：API凭证，是调用者的**唯一**身份标识，一般在环境变量中设置以避免暴露
- Access_token：许可token，相当于调用的“第二层保险”
  
+ API_KEY：API凭证，是调用者的**唯一**身份标识，一般在环境变量中设置以避免暴露
+ 
+ Access_token：许可token，相当于调用的“第二层保险”
+ ## day3 ollame部署测试
+ 1、从官网下载可执行程序并安装：https://ollama.com/download
+
+ 2、配置环境变量OLLAMA_MODELS和OLLAMA_HOST：<img width="930" height="375" alt="image" src="https://github.com/user-attachments/assets/68506bd8-53bf-4dfb-a81a-84300c7bbabb" />
+
+ 
+
 
  
 
