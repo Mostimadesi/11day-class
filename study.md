@@ -93,6 +93,14 @@
 
  2、配置环境变量OLLAMA_MODELS和OLLAMA_HOST：<img width="930" height="375" alt="image" src="https://github.com/user-attachments/assets/68506bd8-53bf-4dfb-a81a-84300c7bbabb" />
 
+ 3、重启电脑，在终端中使用run modelname指令自动下载模型并对话（同时验证环境变量更改是否生效）：<img width="1730" height="924" alt="image" src="https://github.com/user-attachments/assets/37bf6235-86b3-4e46-9a4c-2126b4ec2936" />
+
+ 4、克隆ollama-webui的仓库并运行：<img width="1730" height="924" alt="image" src="https://github.com/user-attachments/assets/b9eb29ba-4b2e-4f3a-b6f3-5f8b3c0a33cd" />
+
+ 5、在webui可视化界面进行对话：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/a7eaadb1-8957-48f9-bd0c-3667418ef1a1" />
+
+ 6、在vscode中使用CODEX编写一个支持多轮对话和参数设置的ollama对话系统：<img width="2493" height="1407" alt="image" src="https://github.com/user-attachments/assets/3a49730d-65fd-433e-972f-ee215fe95956" />
+
  
 
 
