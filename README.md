@@ -1,5 +1,25 @@
 # 11day-class
 
+## Update: Simple RAG Demo
+
+This project now includes `code/simple_rag.py`, a lightweight RAG example.
+
+- It scans the repository for `.md`, `.txt`, `.py`, `.html`, and `.htm` files.
+- It splits documents into chunks.
+- It retrieves relevant chunks with a small TF-IDF retriever.
+- It sends the retrieved context to either a local `Ollama` model or the `OpenAI API`.
+
+Run it with:
+
+```bash
+python code/simple_rag.py
+```
+
+Environment variables:
+
+- `OLLAMA_BASE_URL` and `OLLAMA_MODEL` for Ollama mode
+- `OPENAI_API_KEY`, `OPENAI_BASE_URL`, and `OPENAI_MODEL` for OpenAI mode
+
 > 一个用于记录 **11 天编程课程学习过程** 的仓库。
 
 这个项目主要用来沉淀学习过程中的代码练习、案例脚本、实验记录和学习笔记。  

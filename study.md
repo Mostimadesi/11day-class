@@ -101,7 +101,7 @@
 
  6、在vscode中使用CODEX编写一个支持多轮对话和参数设置的ollama对话系统：<img width="2493" height="1407" alt="image" src="https://github.com/user-attachments/assets/3a49730d-65fd-433e-972f-ee215fe95956" />
 
-## day2 提示词工程相关
+## day3 提示词工程相关
 
 ### 提示词设计原则
 
