@@ -1,26 +1,54 @@
 # 11day-class
 
-## Update: Simple RAG Demo
+## 更新：Simple RAG 示例
 
-This project now includes `code/simple_rag.py`, a lightweight RAG example.
+当前项目已包含 `code/simple_rag.py`，这是一个轻量级 RAG 示例。
 
-- It scans the repository for `.md`, `.txt`, `.py`, `.html`, and `.htm` files.
-- It splits documents into chunks.
-- It retrieves relevant chunks with a small TF-IDF retriever.
-- It sends the retrieved context to either a local `Ollama` model or the `OpenAI API`.
+- 会扫描仓库中的 `.md`、`.txt`、`.py`、`.html`、`.htm` 文件。
+- 会将文档切分为多个片段（chunk）。
+- 会使用轻量级 TF-IDF 检索器召回相关片段。
+- 会将召回上下文发送给本地 `Ollama` 模型或 `OpenAI API`。
 
-Run it with:
+运行方式：
 
 ```bash
 python code/simple_rag.py
 ```
 
-Environment variables:
+环境变量：
 
-- `OLLAMA_BASE_URL` and `OLLAMA_MODEL` for Ollama mode
-- `OPENAI_API_KEY`, `OPENAI_BASE_URL`, and `OPENAI_MODEL` for OpenAI mode
+- `OLLAMA_BASE_URL` 与 `OLLAMA_MODEL`（用于 Ollama 模式）
+- `OPENAI_API_KEY`、`OPENAI_BASE_URL` 与 `OPENAI_MODEL`（用于 OpenAI 模式）
 
-> 一个用于记录 **11 天编程课程学习过程** 的仓库。
+### 更新：基于gradio和fastapi的简易前后端
+
+- `code/gradio_fastapi_ollama.py`
+  - 提供基于 `FastAPI` 的后端接口：
+    - `GET /api/health`
+    - `GET /api/models`
+    - `POST /api/chat`
+    - `POST /api/clear`
+  - 在 `/gradio` 路径挂载 `Gradio` 对话界面
+  - 复用 `OllamaChatAPI` 的会话记忆能力，并支持按会话切换模型
+- `code/simple_rag.py`
+  - 内置轻量级本地检索器（`TF-IDF` 风格打分）
+  - 单脚本支持 `ollama` 与 `openai` 两种提供方
+  - 返回可追溯来源信息（`source`、`chunk_id`、`score`）
+
+快速运行：
+
+```bash
+# RAG 示例
+python code/simple_rag.py
+
+# FastAPI + Gradio 示例
+python code/gradio_fastapi_ollama.py
+# 然后访问 http://127.0.0.1:8000/gradio
+```
+
+## 项目简介
+
+一个用于记录 **11 天编程课程学习过程** 的仓库。
 
 这个项目主要用来沉淀学习过程中的代码练习、案例脚本、实验记录和学习笔记。  
 仓库会随着课程推进持续更新，既保存阶段性成果，也方便后续回顾与复盘。
