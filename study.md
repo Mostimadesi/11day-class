@@ -167,9 +167,19 @@
 ## day5 dify平台部署
 1、访问dify官网并使用github账号登录：https://cloud.dify.ai/
 
-2、选择创建空白应用：
+2、选择创建空白应用：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/f1bc1c54-daec-4cf2-8ee7-a435798d000d" />
 
-3、
+3、在设置中配置好模型供应商：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/2d24980f-7ad9-497a-b3fd-56ad0e8c65fa" />
+
+4、创建知识库并配置检索设置：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/7ccb5d40-13e5-412b-baa9-6fd2bcc475cc" />
+
+5、在工作流中添加知识检索并引用创建的知识库：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/9b95ebad-6eea-4e21-8e93-55908231a76e" />
+
+6、测试节点是否能正常运行：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/2f1f617d-463a-41c9-8de8-b9522b55cb77" />
+
+
+
+
 
 
 
