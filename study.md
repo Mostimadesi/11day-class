@@ -164,7 +164,7 @@
 
 4、集成推理：通过让LLM进行多次独立推理并对结果投票，稳定答案输出，并在证据不足时倾向于让AI弃权
 
-## day5 dify平台部署
+## day5 dify线上平台试用
 1、访问dify官网并使用github账号登录：https://cloud.dify.ai/
 
 2、选择创建空白应用：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/f1bc1c54-daec-4cf2-8ee7-a435798d000d" />
@@ -176,6 +176,24 @@
 5、在工作流中添加知识检索并引用创建的知识库：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/9b95ebad-6eea-4e21-8e93-55908231a76e" />
 
 6、测试节点是否能正常运行：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/2f1f617d-463a-41c9-8de8-b9522b55cb77" />
+
+## day6 dify本地部署
+1、在powershell中确保wsl2和hyperV功能已正常启用：<img width="1320" height="1050" alt="image" src="https://github.com/user-attachments/assets/fa561cf5-aa4f-4559-881a-bba4d49c693b" />
+
+2、在docker设置中按教程进行换源：<img width="1917" height="1095" alt="image" src="https://github.com/user-attachments/assets/3cbb84c1-0289-4b1e-b630-dd76bb150cde" />
+
+3、克隆dify库到本地：<img width="1730" height="924" alt="image" src="https://github.com/user-attachments/assets/2e5b0050-72f7-497b-b16e-389996c73461" />
+
+4、在dify库的docker文件夹下拉取镜像部署（须先开启dockerdesktop）：<img width="1730" height="924" alt="image" src="https://github.com/user-attachments/assets/c6a366c9-8714-406d-8e70-c1d6c75f97b5" />
+
+5、在本地打开http://localhost/install网址，成功显示设置账户界面则已部署成功：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/f998222b-80b5-406e-b812-b8cf17d62ac6" />
+
+
+
+
+
+
+
 
 
 
