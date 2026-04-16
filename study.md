@@ -188,6 +188,12 @@
 
 5、在本地打开http://localhost/install网址，成功显示设置账户界面则已部署成功：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/f998222b-80b5-406e-b812-b8cf17d62ac6" />
 
+6、在硅谷流动平台注册获取API并在本地完成知识库index：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/512c2938-1deb-4a30-98e0-48122fcae6c0" />
+
+7、创建一个简单agent应用并检查知识库效果：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/d5cae452-fefc-43a7-a823-07ec63197e57" />
+
+
+
 
 
 
