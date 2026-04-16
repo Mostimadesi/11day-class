@@ -89,7 +89,7 @@
 
  Access_token：许可token，相当于调用的“第二层保险”
 
- ## day3 ollame部署测试
+ ## day3 ollama部署测试
  1、从官网下载可执行程序并安装：https://ollama.com/download
 
  2、配置环境变量OLLAMA_MODELS和OLLAMA_HOST：<img width="930" height="375" alt="image" src="https://github.com/user-attachments/assets/68506bd8-53bf-4dfb-a81a-84300c7bbabb" />
@@ -186,7 +186,7 @@
 
 4、在dify库的docker文件夹下拉取镜像部署（须先开启dockerdesktop）：<img width="1730" height="924" alt="image" src="https://github.com/user-attachments/assets/c6a366c9-8714-406d-8e70-c1d6c75f97b5" />
 
-5、在本地打开http://localhost/install网址，成功显示设置账户界面则已部署成功：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/f998222b-80b5-406e-b812-b8cf17d62ac6" />
+5、在本地打开http://localhost/install 网址，成功显示设置账户界面则已部署成功：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/f998222b-80b5-406e-b812-b8cf17d62ac6" />
 
 6、在硅谷流动平台注册获取API并在本地完成知识库index：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/512c2938-1deb-4a30-98e0-48122fcae6c0" />
 
