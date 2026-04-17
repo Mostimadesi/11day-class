@@ -192,6 +192,15 @@
 
 7、创建一个简单agent应用并检查知识库效果：<img width="2560" height="1347" alt="image" src="https://github.com/user-attachments/assets/d5cae452-fefc-43a7-a823-07ec63197e57" />
 
+## day7 kohakuRAG本地部署
+1、克隆kohakuRAG库到本地并配置虚拟环境和库：<img width="1189" height="556" alt="image" src="https://github.com/user-attachments/assets/52ebda6b-cb7f-4ea8-95fb-ae91c300d938" />
+
+2、降级transformer版本至4.51.3（windows）：<img width="739" height="194" alt="image" src="https://github.com/user-attachments/assets/c89492e1-95b9-4a62-8663-1d4aeb7c4c1d" />
+
+3、从git地址安装kohakuengine库：<img width="1730" height="924" alt="image" src="https://github.com/user-attachments/assets/b0932b4b-32f3-4be9-bedb-8f2691e3cf84" />
+
+
+
 
 
 
