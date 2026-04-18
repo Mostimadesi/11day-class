@@ -1,0 +1,28 @@
+﻿{% extends "base.html" %}
+{% block title %}聊天{% endblock %}
+{% block content %}
+<section class="card">
+  <div class="header">
+    <h1>你好，{{ user['username'] }}</h1>
+    <form method="post" action="{{ url_for('logout') }}">
+      <button type="submit" class="secondary">退出登录</button>
+    </form>
+  </div>
+
+  <div class="chat-window">
+    {% for msg in messages %}
+      <article class="msg {{ msg['role'] }}">
+        <strong>{{ "你" if msg['role'] == 'user' else "AI" }}</strong>
+        <p>{{ msg['content'] }}</p>
+      </article>
+    {% else %}
+      <p class="empty">还没有消息，发送一条试试。</p>
+    {% endfor %}
+  </div>
+
+  <form method="post" class="chat-form">
+    <textarea name="message" placeholder="输入问题..." required></textarea>
+    <button type="submit">发送</button>
+  </form>
+</section>
+{% endblock %}
