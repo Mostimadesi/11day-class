@@ -1,5 +1,29 @@
 # 11day-class
 
+## 更新：Dify 本地用户系统 MVP
+
+当前仓库已新增 `dify_mvp_app/`，用于演示一个可本地运行的最小化应用：
+
+- 基于 `Flask` 的注册/登录用户系统（密码哈希存储）
+- 每个用户独立保存 Dify `conversation_id`，确保会话隔离
+- 后端代理调用 Dify Chat API，避免在前端暴露 `DIFY_API_KEY`
+- 使用 `SQLite` 持久化用户与聊天消息
+
+运行示例：
+
+```bash
+cd dify_mvp_app
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+pip install -r requirements.txt
+copy .env.example .env
+# 配置 DIFY_API_KEY 后启动
+python app.py
+```
+
+访问：`http://localhost:8080`
+
 ## 更新：Simple RAG 示例
 
 当前项目已包含 `code/simple_rag.py`，这是一个轻量级 RAG 示例。
@@ -46,6 +70,7 @@ python code/gradio_fastapi_ollama.py
 # 然后访问 http://127.0.0.1:8000/gradio
 ```
 
+
 ## 项目简介
 
 一个用于记录 **11 天编程课程学习过程** 的仓库。
@@ -70,6 +95,7 @@ python code/gradio_fastapi_ollama.py
 │  ├─ simple_calcu.py
 │  ├─ deepseek_langchain_example.py
 │  └─ ollama_llm.py
+├─ dify_mvp_app/            # Dify 用户系统 MVP（Flask + SQLite）
 ├─ vibetest/                # AI 辅助生成的小项目与文档
 ├─ certificate/             # 课程相关图片/证明材料
 ├─ study.md                 # 学习笔记与过程记录
@@ -81,6 +107,15 @@ python code/gradio_fastapi_ollama.py
 ### Python 代码
 
 `code/` 目录用于保存课程中的练习代码、接口调用示例和阶段性成果。
+
+### Dify MVP 应用
+
+`dify_mvp_app/` 目录包含一个与本地 Dify 联调的最小用户系统实践：
+
+- `app.py`：Flask 主程序（注册、登录、聊天、会话映射）
+- `templates/` 与 `static/`：基础页面与样式
+- `.env.example`：Dify 与应用配置模板
+- `README.md`：该子项目的独立运行说明
 
 #### `hello_world.py`
 

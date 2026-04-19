@@ -21,7 +21,7 @@
 ## 本地运行
 
 ```powershell
-cd d:\11days\dify_mvp_app
+cd d:\11days\github_res\11day-class\dify_mvp_app
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
@@ -44,10 +44,12 @@ python app.py
 
 访问：`http://localhost:8080`
 
+快速验证：浏览器打开后，先注册新用户，再登录并发送一条消息，确认可返回 Dify 响应。
+
 ## Docker 运行
 
 ```powershell
-cd d:\11days\dify_mvp_app
+cd d:\11days\github_res\11day-class\dify_mvp_app
 copy .env.example .env
 # 编辑 .env，填入真实 Dify API Key
 
