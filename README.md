@@ -174,26 +174,8 @@ python code/gradio_fastapi_ollama.py
 - `vibetest/`：AI 辅助生成的小项目实验内容，例如贪吃蛇网页小游戏及说明文档
 - `certificate/`：课程相关图片或阶段性成果材料
 
-## 运行方式
-
-建议在项目根目录下使用 Python 运行示例脚本：
-
-```bash
-python code/hello_world.py
-python code/simple_calcu.py
-python code/deepseek_langchain_example.py
-python code/ollama_llm.py
-```
-
-### 运行说明
-
-- 运行 `deepseek_langchain_example.py` 前，需要先配置环境变量 `DEEPSEEK_API_KEY`
-- 运行 `ollama_llm.py` 前，需要先在本地安装并启动 **Ollama**
-- 若涉及第三方库，请先安装对应依赖，例如 `requests`、`langchain-openai`、`langchain-core`
 
 ## 当前学习范围
-
-从目前的仓库内容来看，已经覆盖了以下主题：
 
 - Python 基础语法与函数练习
 - 条件判断、循环与异常处理
